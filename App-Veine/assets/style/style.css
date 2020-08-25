@@ -136,6 +136,30 @@ div.logo figure {
   width: 40px;
   line-height: 20px;
 }
+.containerglobal-contact div#container-contactPending .container-input {
+  margin-top: 25px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.containerglobal-contact div#container-contactPending .container-input #searchInput {
+  border-radius: 5px;
+  border: none;
+  width: calc(100% - 20px);
+  height: 40px;
+  padding-left: 5px;
+  margin-right: 25px;
+}
+.containerglobal-contact div#container-contactPending .container-input #searchBtn {
+  border-radius: 5px;
+  border: none;
+  width: 50px;
+  height: 40px;
+  background-color: #f04747;
+}
+.containerglobal-contact div#container-contactPending .container-input #searchBtn i {
+  color: white;
+}
 .containerglobal-contact div#container-contacts {
   margin-top: 50px;
 }
@@ -173,6 +197,9 @@ div.logo figure {
   color: white;
   width: 40px;
   line-height: 20px;
+}
+.containerglobal-contact div#container-contacts .contact-center div.container-btn button i#testtesmort {
+  background-color: #43577e;
 }
 #containerformregister {
   background-color: #457EFF;
