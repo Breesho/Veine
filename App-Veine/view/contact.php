@@ -32,7 +32,8 @@ require_once '../controller/ContactController.php';
                     <h3>Contact en attente</h3>
                 </div>
                 <ul>
-                    <?php foreach ($contactsArray as $contact) {
+                <?php if (!empty($contactsArray)) {
+                   foreach ($contactsArray as $contact) {
                         if ($contact['contacts_authorized'] == 1) {
                             continue;
                         } ?>
@@ -47,6 +48,9 @@ require_once '../controller/ContactController.php';
                             </div>
                         </li>
 
+                    <?php }} else { ?>
+
+<p>caca</p>
                     <?php } ?>
                 </ul>
             </div>
@@ -56,7 +60,8 @@ require_once '../controller/ContactController.php';
                     <h3>Contact</h3>
                 </div>
                 <ul>
-                    <?php foreach ($contactsArray as $contact) {
+                <?php if (!empty($contactsArray)) {
+                    foreach ($contactsArray as $contact) {
                         if ($contact['contacts_authorized'] == 0) {
                             continue;
                         } ?>
@@ -72,11 +77,14 @@ require_once '../controller/ContactController.php';
                             <?php   } else { ?>
 
                                 <button type="submit" name="unmarked" value="<?= $contact['contact_id'] ?>"><i class="fas fa-star"></i></button>
-
-                            <?php } ?>
-                            </div>
+     
+                                </div>
                         </li>
-                    <?php } ?>
+                            <?php }}} else { ?>
+
+                            <p>pipi</p>
+                            <?php } ?>
+                    
                 </ul>
             </div>
 
